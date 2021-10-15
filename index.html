@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Portfolio_Saima</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="My Portfolio" />
+    <meta name="keywords" content="SS, portfolio, html5, sass, jquery" />
+    <meta name="author" content="Saima Sultana" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <!-- SECTION: Splashscreen -->
+    <div class="splashscreen">
+        <div class="preloader">
+            <span class="preloader__text">Loading</span>
+        </div>
+    </div>
+    <!-- END SECTION: Splashscreen -->
+    <!-- SECTION: Navigation -->
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover, .offcanvas a:focus {
+                    color: #f1f1f1;
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+    <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#CS">Current Situation</a>
+        <a href="#PW">Past Work</a>
+        <a href="#work">Portfolio</a>
+        <a href="#resume">Resume</a>
+        <a href="#voluntaryWork">Voluntary Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <!-- END SECTION: Navigation -->
+        <!-- SECTION: Intro -->
+        <header id="home" class="header">
+            <div class="introduction">
+                <h1 class="introduction__content">
+                    <span class="introduction__content-el introduction__content-el--name">Saima Sultana</span>
+                    <span class="introduction__content-el introduction__content-el--description">Inventive</span>
+                    <span class="introduction__content-el introduction__content-el--job">Programmer</span>
+                </h1>
+                <svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z" /></g></svg>
+            </div>
+        </header>
+        <!-- END SECTION: Intro -->
+        <main id="aboutMe" role="main">
+            <!-- SECTION: About -->
+            <section class="about">
+                <div class="about__wrapper wrapper--small">
+                    <div class="about__content">
+                        <div class="about__content-blurb blurb blurb--framed">
+                            <h2 class="blurb__heading">Nothing is<br />impossible</h2>
+                            <p class="blurb__copy no-margin">Just Work Hard</p>
+                        </div>
+                        <p class="about__content-signature">Saima Sultana</p>
+                    </div>
+                    <img class="about__visual" src="assets/img/about-visual.png" alt="Saima Sultana" />
+                </div>
+            </section>
+            <!-- END SECTION: About -->
+            <!-- SECTION: App Design -->
+            <section id="CS" class="app-design">
+                <div class="app-design__wrapper wrapper--large">
+                    <div class="app-design__content blurb">
+                        <h2 class="blurb__heading" style="padding-right: 500px">Masters Student<br />at UQTR</h2>
+                        <p class="blurb__copy blurb__copy--tight">Developoing an algorithm regarding text-mining using C# in the field of text-mining.</p>
+                    </div>
+                </div>
+                <figure class="app-design__visual"></figure>
+            </section>
+            <!-- END SECTION: App Design -->
+            <!-- SECTION: Web Design -->
+            <section id="PW" class="web-design">
+                <div class="web-design__wrapper wrapper--small">
+                    <div class="web-design__content blurb">
+                        <h2 class="blurb__heading">GRA at UQTR<br />in Winter 2015</h2>
+                        <p class="blurb__copy blurb__copy--tight">GRA - Graduate Research Assistant in the department of Modern Language and Translation  at UQTR where i was developing a programming project using Python (NLTK Toolkit) based on an universal model for detecting and localizing of four Meaning based translation error.</p>
+                    </div>
+                </div>
+                <figure class="web-design__visual"></figure>
+            </section>
+            <!-- END SECTION: Web Design -->
+            <!-- SECTION: Work -->
+            <section id="work" class="work">
+                <h2 class="work__heading title">Project Work</h2>
+                <div class="work__wrapper wrapper--large">
+                    <ul class="work__list">
+                        <li class="work__list-el work__list-el--is-active">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">LAMIA APP Design<br />by C#.Net</h3>
+                                    <p class="blurb__copy">As a masters student of LAMIA Laboratory in UQTR, recently working and implementing a new method for detecting similarities as  well as dissimilarities between to large textes using N-Gram.</p>
+                                </div>
+                                <a class="transform-link" href="#0">Download the project (Currently Working)</a>
+                            </div>
+                            <div class="work__visual">
+                                <img src="assets/img/work-strategik.jpg" alt="LAMIA, UQTR" />
+                            </div>
+                        </li>
+                        <li class="work__list-el">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">Content Word Precision Algorithm Testing Tool<br />by Python (NLTK Toolkit)</h3>
+                                    <p class="blurb__copy">Programming project using Python (NLTK Toolkit) based on an universal model for detecting and localizing of four meaning-based translation error.</p>
+                                </div>
+                                <a class="transform-link" href="assets/download/Project_Work.rar" download="Project_Work.rar">Download the project</a>
+                            </div>
+                            <div class="work__visual">
+                                <img src="assets/img/work-eostre.jpg" alt="Content Word Precition Algorithm Testing Tools" />
+                            </div>
+                        </li>
+                        <li class="work__list-el">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">Simulator Tesiting Tool<br />by MATLAB</h3>
+                                    <p class="blurb__copy">Simulator to test the level of the Mann-Whitney U test as well as Student's t-test using - normal, exponential and double exponential (Laplace) distribution using MATLAB.</p>
+                                </div>
+                                <a class="transform-link" href="assets/download/Testing_Distributions.rar" download="Testing_Distributions.rar">Download the project</a>
+                            </div>
+                            <div class="work__visual">
+                                <img src="assets/img/work-go-outside.jpg" alt="Testing Tool" />
+                            </div>
+                        </li>
+                        <li class="work__list-el">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">Principal Component Analyser<br />by MATLAB</h3>
+                                    <p class="blurb__copy">PCA analyer of a given large dataset using MATLAB.</p>
+                                </div>
+                                <a class="transform-link" href="assets/download/Software_PCA_Analyser_Saima.rar" download="Software_PCA_Analyser_Saima.rar">Download the project</a>
+                            </div>
+                            <div class="work__visual">
+                                <img src="assets/img/rsz_3.jpg" alt="Testing Tool" />
+                            </div>
+                        </li>
+                        <li class="work__list-el">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">Automatic Text Summarizing Tool<br />by C#.Net</h3>
+                                    <p class="blurb__copy">Automatic text Summarizer of a large script getting from PDF, web-pages, text files etc uisng C#.Net</p>
+                                </div>
+                                <a class="transform-link" href="assets/download/Text_Summarizing_Tools.rar" download="Text_Summarizing_Tools.rar">Download the project</a>
+                            </div>
+                            <div class="work__visual">
+                                <img src="assets/img/text_summarization.jpg" alt="Text Summarizing Tool" />
+                            </div>
+                        </li>
+                        <li class="work__list-el">
+                            <div class="work__content">
+                                <div class="work__content-blurb blurb blurb--framed">
+                                    <h3 class="blurb__heading">Testing of a Project<br />by Eclipse and also CodePro Analytix</h3>
+                                    <p class="blurb__copy">Unit testing of a project integrating Maven Integration Testing using JUnit and also CodePro Analytix</p>
+                                </div>
+                                <a href="assets/download/TRIII_ProjectWork.rar" download="TRIII_ProjectWork.rar">Download the project</a>
+                            </div>
+                            <div class="work__visual">
+                                <img src="assets/img/rsz_diff_name.jpg" alt="Testing Tool" />
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="work__navigation">
+                        <li class="work__navigation-el work__navigation-el--is-active"></li>
+                        <li class="work__navigation-el"></li>
+                        <li class="work__navigation-el"></li>
+                        <li class="work__navigation-el"></li>
+                        <li class="work__navigation-el"></li>
+                        <li class="work__navigation-el"></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- END SECTION: Work -->
+            <!-- SECTION: Resume -->
+            <section id="resume" class="resume">
+                <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+                <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <style>
+                    .mySlides {
+                        display: none;
+                    }
+                </style>
+                <h2 class="blog__heading title">Resume</h2>
+                <div class="blog__wrapper wrapper--large">
+                    <div class=" w3-content w3-display-container w3-border-dark-gray">
+                        <div class="w3-container w3-card-2 w3-white w3-margin-bottom mySlides w3-animate-zoom">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional & Research Experience</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Masters Research Assistant / UQTR</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                                <p>Recently my work is based on text-mining entitled "Detecting Similar Sentences Using N-Gram from two Different Large Texts" by using C#.</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Graduate Research Assistant (Programmer) / UQTR (Department of Modern Language and Translation)</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2015 - March 2015</h6>
+                                <p>My work is a programming project using Python entitled "A Universal Model for Detection and Localization of four Meaning-based Translation Errors". Basicaly, its a huge content word precision algorithm testing phase.</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Undergrade Research Assistant / Sylhet Engineering College (SEC)</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2011 - July 2012</h6>
+                                <p>B.Sc. Eng. research project entitled "Unsupervised Object Category Recognition from Image Dataset"</p>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="w3-container w3-card-2 w3-white w3-margin-bottom mySlides w3-animate-zoom">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Université du Québec à Trois-Rivières</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                                <p>Masters of Science in the department of Mathematics and Compuater Science (Major - Computer Science)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Sylhet Engineering College, Shahjalal Univerisity of Science & Technology (SUST)</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+                                <p>Bachelor of Science and Engineering in the department of Computer Science and Engineering (CSE)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Kushtia Government College</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2007</h6>
+                                <p>Higher Secondary Certificate (HSC)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Kushtia Government Secondary Girls' School</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2000 - 2005</h6>
+                                <p>Secondary School Certificate (SSC)</p>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="w3-container w3-card-2 w3-white w3-margin-bottom mySlides w3-animate-zoom">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-archive fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Unsupervised Object Category Recognition from Image Datasets / Nova Journal of Engineering and Applied Sciences</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2014</h6>
+                                <p>Author: Saima Sultana, Syeda Ohishee Rahman, Md. Alamgir Hossain (Vol 3, No 3, page 1-8)</p>
+                                <div class="transform-link">
+                                    <a href="assets/download/24-66-1-PB.pdf" download="UOCRID">Download the full text</a>
+                                </div>
+                                <br />
+                                <div class="transform-link">
+                                    <a href="http://nova-jeas.com/index.php/jeas/article/view/24" target="_blank">Click here to visit the web-page</a>
+                                </div>
+                                <br />
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="w3-container w3-card-2 w3-white w3-margin-bottom mySlides w3-animate-zoom">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk w3-margin-right w3-xxlarge w3-text-teal"></i>Scholarships</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Université du Québec à Trois-Rivières, QC, Canada</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Winter 2015</h6>
+                                <p>Scholarship Exemption Tuition Fees for Foreign Students (No. of Contest: 0900-01, Amount: 5226$)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Université du Québec à Trois-Rivières, QC, Canada / Ministry of Education, Recreation and Sport</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2015</h6>
+                                <p>Scholarship Exemption Tuition Fees for Foreign Students (No. of Contest: 0900-02, Amount: 3919$)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Université du Québec à Trois-Rivières, QC, Canada / Ministry of Education, Recreation and Sport</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Autumn 2015</h6>
+                                <p>Scholarship Exemption Tuition Fees for Foreign Students (No. of Contest: 0900-03, Amount: 4024$)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Université du Québec à Trois-Rivières, QC, Canada / Ministry of Education, Higher Education and Research</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Winter 2016</h6>
+                                <p>Scholarship Exemption Tuition Fees for Foreign Students (No. of Contest: 0900-01, Amount: 4024$)</p>
+                                <hr />
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Université du Québec à Trois-Rivières, QC, Canada / Ministry of Education, Higher Education and Research</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2016</h6>
+                                <p>Scholarship Exemption Tuition Fees for Foreign Students (No. of Contest: 0900-02, Amount: 1341$)</p>
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="w3-center">
+                            <div class="w3-section">
+                                <button class="w3-btn" onclick="plusDivs(-1)">< Prev</button>
+                                <button class="w3-btn" onclick="plusDivs(1)">Next ></button>
+                            </div>
+                            <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+                            <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+                            <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+                            <button class="w3-btn demo" onclick="currentDiv(4)">4</button>
+                        </div>
+                        <a class="transform-link" href="assets/download/Resume%20of%20Saima%20Sultana.pdf" download="Resume of Saima Sultana.pdf">Download full RESUME</a>
+                    </div>
+                </div>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = x.length }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" w3-red", "");
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " w3-red";
+                    }
+                </script>
+                <br />
+                <br />
+            </section>
+            <!-- END SECTION: Resume -->
+            <!-- SECTION: Voluntary Work -->
+            <section id="voluntaryWork" class="contact">
+                <style>
+                    .iconDetails {
+                        margin-left: 2%;
+                        float: left;
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    .container2 {
+                        width: 100%;
+                        height: auto;
+                        padding: 1%;
+                    }
+
+                    h4 {
+                        margin: 0px;
+                    }
+
+                    ul.a {
+                        list-style-type: circle;
+                        margin-left: 100px;
+                    }
+                </style>
+
+                <div class="contact__wrapper wrapper--large">
+                    <div class="contact__visual" style="display: initial; position: sticky;">
+                        <img src="assets/img/bg_volunteerwork.png" alt="voluntaryWork" />
+                    </div>
+                    <div class="about__content">
+                        <div class="about__content-blurb blurb blurb--framed">
+                            <h2 class="blurb__heading" style="margin-left: 50px;">Extracurricular Activities</h2>
+                            <ul class="a">
+                                <li>
+                                    <p>Volunteer worker as a ICT expert of Aloasha Technical Support Society (ATSS) Banlgadesh which works for the education and social welfare of underprivileged child with the joint contribution of ATSS Japan.</p>
+                                    <a class="transform-link" href="http://bd.aloasha.org/agrotech/?page_id=11" target="_blank">Web Site</a>
+                                </li>
+                                <li>
+                                    <p>Maintained ATSS organizations <a class="transform-link" href="http://bd.aloasha.org/school" target="_blank">Aloasha School</a> and <a class="transform-link" href="http://bd.aloasha.org/agrotech" target="_blank">Aloasha Agrotech</a> web site.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END SECTION: Voluntary Work -->
+            <!-- SECTION: Contact -->
+            <section id="contact" class="contact w3-section">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <div class="contact__wrapper wrapper--large">
+                    <div class="contact__visual">
+                        <img src="assets/img/contact-visual.png" alt="Saima Sultana's location" />
+                    </div>
+                    <!-- Simple form setup: formspree.io -->
+                    <div class=" contact">
+                        <div class="section-block contact-block">
+                            <div class="block-header">
+                                <h2 class="contact__heading title">Contact Me</h2>
+                                <p>I'll be happy to hear from you</p>
+                            </div>
+                            <div class="row contact-infos">
+                                <div class="col-sm-4 col-xs-6">
+                                    <div class="contact-info">
+                                        <h4><i class="material-icons">&#xe0c8;</i> Address</h4>
+                                        <p>5055 Chemin De La<br>Cote-St-Luc, Montreal, Quebec, H3W 2H5</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-6">
+                                    <div class="contact-info">
+                                        <h4><span class="glyphicon">&#xe182;</span> Phone</h4>
+                                        <p>+1(514) 357-6196<br>+1(438) 927-1297</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="contact-info">
+                                        <h4><i class="material-icons">&#xe0be;</i> Email</h4>
+                                        <p>sinthi315@gmail.com<br>saima.sultana@uqtr.ca</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <form data-toggle="validator" id="contact-form" action="ProcessRequest.cshtml" run method="post" class="contact-form" oninvalid="alert('You must fill out the form!');">
+                                <div id="contact-form-result"></div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Name" name="name" required="" spellcheck="false"/>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" placeholder="Email" name="email" required=""spellcheck="false"/>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Subject" name="subject" required="" spellcheck="true"/>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message" rows="7" name="message" required="" spellcheck="true"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn-custom light disabled" style="pointer-events: all; cursor: pointer;">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END SECTION: Contact -->
+        </main>
+        <!-- SECTION: Footer -->
+        <footer class="footer">
+            <div class="footer__wrapper wrapper--large">
+                <p class="footer__copyright no-margin">&copy; 2016 Saima Sultana</p>
+                <div class="w3-container w3-center w3-margin-top">
+                    <p>Find me on social media</p>
+                    <i class="fa fa-facebook-official w3-hover-text-indigo w3-large"></i>
+                    <i class="fa fa-google-plus-official w3-hover-text-red w3-large"></i>
+                    <i class="fa fa-twitter w3-hover-text-light-blue w3-large"></i>
+                    <i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i>
+                </div>
+                <a class="footer__arrow" href="#home">
+                    <svg class="footer__arrow-el" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M315.4 365c-336-305-345-315-290-351 18-12 32-14 45-8 10 5 145 123 300 262l281 253 196-178c108-98 237-215 287-260 50-46 98-83 107-83s27 9 40 19c20 16 22 23 14 46 -12 33-623 585-647 585C638.4 650 489.4 522 315.4 365z" /></g></svg>
+                </a>
+                <hr />
+            </div>
+        </footer>
+        <!-- END SECTION: Footer -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- jQuery local fallback -->
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+    <script src="assets/js/functions-min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
+    <!--
+        <script>
+        (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+        function() {
+        (b[l].q = b[l].q || []).push(arguments)
+        });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+        </script>
+        -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

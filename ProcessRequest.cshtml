@@ -1,0 +1,23 @@
+﻿@{
+    string name = Request["name"];
+    string customerEmail = Request["email"];
+    string subject = Request["subject"];
+    string customerRequest = Request["message"];
+    var errorMessage = "";
+    try
+    {
+        WebMail.SmtpServer = "smtp.gmail.com";
+        WebMail.SmtpPort = 25;
+        WebMail.EnableSsl = false;
+        WebMail.UserName = "ss@saima-portfolio.somee.com";
+        WebMail.Password = "Cynthi12";
+        WebMail.From = customerEmail;
+        // Send email
+        WebMail.Send(to: "ss@saima-portfolio.somee.com", subject: subject + customerEmail + name, body: customerRequest);
+    }
+    catch (Exception ex)
+    {
+        errorMessage = ex.Message;
+        <text>@errorMessage</text>
+    }
+}
